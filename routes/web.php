@@ -13,15 +13,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/',function(){
-    return view('index');
-});
+Route::get('/','HomeController@home');
 
-Route::get('/register','RegisterController@form');
+Route::get('/register','AuthController@form');
 
-
-
-Route::get('/welcome','RegisterController@sapa');
+Route::get('/welcome','AuthController@sapa');
 
 
 
